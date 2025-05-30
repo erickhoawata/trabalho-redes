@@ -1,0 +1,34 @@
+version: '3.8'
+
+services:
+  server1:
+    build:
+       context: ./projeto
+    container_name: server1
+    hostname: server1
+    ports:
+      - "3001:3000"
+
+  server2:
+    build:
+      context: ./projeto
+    container_name: server2
+    hostname: server2
+    ports:
+      - "3002:3000"
+
+  server3:
+    build:
+       context: ./projeto
+    container_name: server3
+    hostname: server3
+    ports:
+      - "3003:3000"
+
+  server4:
+    build:
+      context: ./projeto
+    container_name: server4
+    hostname: server4
+    ports:
+      - "3004:3000"
